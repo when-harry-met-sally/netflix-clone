@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+}
+
+.panel-text2 {
+    background-color: rgb(144, 144, 252);
+}
+
+.panel-col2 {
+    height: 20em;
+       overflow: hidden;
+}
+
+.panel-img2 {
+    overflow: hidden;
+}

@@ -1,0 +1,50 @@
+.panel-text {
+  background-color: rgb(0, 194, 0);
+
+  overflow: hidden;
+  min-width: 25rem;
+}
+
+.panel-row {
+    max-height: 18rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.white-text {
+  color: white;
+}
+
+.panel-header {
+  font-size: 1.3rem;
+}
+
+.panel-description {
+  font-size: 1rem;
+}
+
+.panel-footer {
+  font-size: 1rem;
+}
+
+.panel-container {
+  padding: 1.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  font-weight: thin;
+}
+
+.movie-details {
+  z-index: 10;
+}
+
+.black-nav {
+  background-color: black;
+}

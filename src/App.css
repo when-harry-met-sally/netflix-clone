@@ -1,22 +1,172 @@
-.App {
+.transparent {
+  opacity: 0;
+}
+
+.movie-container:hover {
+  transform: scale(1.13);
+  transition: 0.2s;
+  position: relative;
+}
+
+.progress {
+  z-index: -1;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.movie-details {
+  width: 100%;
+  padding: none;
+}
+.movie-details-container {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 40%;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.movie-genre {
+  font-weight: thin;
+  font-size: 0.8em;
+}
+
+.moving-rating {
+}
+
+.image-cover {
+  position: relative;
+}
+
+.image-cover {
+  position: relative;
+}
+.image-cover::before {
+  content: "";
+  position: absolute;
+  height: 98.5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Adjust the color values to achieve desired darkness */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.hl {
+  background-color: rgb(248, 192, 89);
+}
+
+.poster {
+  width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.header-cover {
+  position: relative;
+}
+
+.header-cover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Adjust the color values to achieve desired darkness */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.5s ease-in;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  margin-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+  font-weight: thin;
 }
 
-.App-logo {
-  height: 40vmin;
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: lightgrey;
+  transition: color 0.25s ease-in;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  font-weight: bold;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.black-nav {
+  background-color: black;
+  transition: background-color 0.5s ease-in;
+}
+
+.logo {
+  height: 5em;
+  margin: none;
+  padding: none;
+}
+
+.logo-image {
+  height: 100%;
+}
+
+.poster-title {
+  color: rgb(180, 1, 1);
+  font-size: 4vw;
+  font-family: "Audiowide", cursive;
+}
+.poster-description {
   color: white;
+  font-weight: thin;
+  font-size: 1vw;
+  margin-top: -1em;
+}
+.poster-info-container {
+  z-index: 3;
+  position: absolute;
+  bottom: 30%;
+  height: 10%;
+  width: 100%;
+  padding-left: 0.75rem;
 }
 
-.App-link {
-  color: #09d3ac;
+.poster-button {
+  padding: 1em;
+  font-size: 1vh;
 }
